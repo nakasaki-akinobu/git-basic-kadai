@@ -1,0 +1,86 @@
+akinobu@akinobu MINGW64 ~
+$ cd e:/samurai
+
+akinobu@akinobu MINGW64 /e/samurai
+$ mkdir git_challenge
+
+akinobu@akinobu MINGW64 /e/samurai
+$ cd git_challenge
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge
+$ touch hello_world.txt
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge
+$ echo "Hello, world!" >> hello_world.txt
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge
+$ git add hello_world.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge
+$ cd git_challenge
+bash: cd: git_challenge: No such file or directory
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge
+$ pwd
+/e/samurai/git_challenge
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge
+$ git init
+Initialized empty Git repository in E:/SAMURAI/git_challenge/.git/
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ pwd
+/e/samurai/git_challenge
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ cd hell_world.txt
+bash: cd: hell_world.txt: No such file or directory
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ git add hello_world.txt
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ git commit -m "Hello, world! を追記"
+[main (root-commit) b94aa99] Hello, world! を追記
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ echo "こんにちは、世界!" >> hello_world.txt
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ pwd
+/e/samurai/git_challenge
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ cd hello_world.txt
+bash: cd: hello_world.txt: Not a directory
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ pwd
+/e/samurai/git_challenge
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ git add hello_world.txt
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ git commit -m "日本語訳 を追記"
+[main a5059de] 日本語訳 を追記
+ 1 file changed, 1 insertion(+)
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$ git log --oneline
+a5059de (HEAD -> main) 日本語訳 を追記
+b94aa99 Hello, world! を追記
+
+akinobu@akinobu MINGW64 /e/samurai/git_challenge (main)
+$
